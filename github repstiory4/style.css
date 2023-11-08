@@ -1,0 +1,94 @@
+body{
+    background-color:#c6ce20;
+}
+.circle {
+    width: 175px; /* Adjust this value to match your desired circle size */
+    height: 175px; /* Adjust this value to match your desired circle size */
+    border-radius: 50%; /* Sets the border radius to create a circle */
+    overflow: hidden; /* Clips the image to the dimensions of the circle */
+    display: block; margin: 0 auto;
+  
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scales the image to cover the entire circle */
+  }
+  header{
+    background-color:#f7990d;
+    height:175px;
+    background-image:linear-gradient(to bottom,#f7990d,#f7990d,#f7990d,#f7990d,#1a1a1a);
+  }
+  .bd {
+    background-color:black;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 535px;
+    transition: 2s;
+  }
+  
+  .bd:hover {
+    transform: scale(2);
+  }
+  .p1:hover {
+    animation-name:pg;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition:1.5s;
+    transform: scale(2.3);
+  }
+
+  @keyframes pg{
+    0%{color:white;}
+    15%{color:red;}
+    25%{color:yellow;}
+    40%{color:peru;}
+    50%{color:greenyellow;}
+    65%{color:plum;}
+    75%{color:black;}
+    90%{color:blue;}
+    100%{color:aqua;}
+  }
+
+  .s1{
+    color:whte;
+    transition:1s;
+  }
+  .s2{
+    color:red;
+    transition:1s;
+  }
+  .s1:hover{
+    color:red;
+    transform:scale(2.1);
+  }
+  .s2:hover{
+    color:white;
+    transform:scale(2.1);
+  }
+  span{
+    color:white;
+  }
+  .btn{
+    background-color:black;
+    height:50px;
+    width:90px;
+    transition: 1s;
+    padding:5px;
+    margin:1px;
+  }
+  .btn:hover{
+    transform:scale(1.3);
+    letter-spacing: 0.5em;
+    box-shadow: o o 35px var(--clr);
+  }
+  .navigation{
+    display:flex;
+    
+    flex-direction: column;
+  }
